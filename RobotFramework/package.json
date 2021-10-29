@@ -1,0 +1,36 @@
+{
+  "name": "robotframework",
+  "version": "1.0.0",
+  "description": "package.json for robot",
+  "main": "index.js",
+  "scripts": {
+    "test-chrome-ValidLogin": "robot -d Results/IndividualReports/aValidLogin  Suites/aValidLogin.robot",
+    "test-chrome-InvalidLogin": "robot -d Results/IndividualReports/bInvalidLogin  Suites/bInvalidLogin.robot",
+    "test-chrome-LogoutHome": "robot -d Results/IndividualReports/cLogoutHome  Suites/cLogoutHome.robot",
+    "test-chrome-SortLowHigh": "robot -d Results/IndividualReports/dSortProducts  Suites/dSortProducts.robot",
+    "test-chrome-MultipleItems": "robot -d Results/IndividualReports/eAddMultipleItems  Suites/eAddMultipleItems.robot",
+    "test-chrome-SpecificItem": "robot -d Results/IndividualReports/fAddSpecificProduct  Suites/fAddSpecificProduct.robot",
+    "test-chrome-PurchaseFlow": "robot -d Results/IndividualReports/gPurchaseFlow  Suites/gPurchaseFlow.robot",
+    
+    "test-firefox-ValidLogin": "robot -d Results/IndividualReports/aValidLogin  -v browser:firefox  Suites/aValidLogin.robot",
+    "test-firefox-InvalidLogin": "robot -d Results/IndividualReports/bInvalidLogin  -v browser:firefox  Suites/bInvalidLogin.robot",
+    "test-firefox-LogoutHome": "robot -d Results/IndividualReports/cLogoutHome  -v browser:firefox  Suites/cLogoutHome.robot",
+    "test-firefox-SortLowHigh": "robot -d Results/IndividualReports/dSortProducts  -v browser:firefox  Suites/dSortProducts.robot",
+    "test-firefox-MultipleItems": "robot -d Results/IndividualReports/eAddMultipleItems  -v browser:firefox  Suites/eAddMultipleItems.robot",
+    "test-firefox-SpecificItem": "robot -d Results/IndividualReports/fAddSpecificProduct  -v browser:firefox  Suites/fAddSpecificProduct.robot",
+    "test-firefox-PurchaseFlow": "robot -d Results/IndividualReports/gPurchaseFlow  -v browser:firefox  Suites/gPurchaseFlow.robot",
+
+    "test-chrome-LoginRelatedTag": "robot -d Results/TagReports/LoginRelated -i LoginRelated  Suites",
+    "test-chrome-ProductsRelatedTag": "robot -d Results/TagReports/ProductsRelated -i ProductsRelated  Suites",
+    "test-chrome-PurchaseFlowTag": "robot -d Results/TagReports/PurchaseFlow -i PurchaseFlow  Suites",
+
+    "test-firefox-LoginRelatedTag": "robot -d Results/TagReports/LoginRelated -i LoginRelated  -v browser:firefox  Suites",
+    "test-firefox-ProductsRelatedTag": "robot -d Results/TagReports/ProductsRelated -i ProductsRelated  -v browser:firefox  Suites",
+    "test-firefox-PurchaseFlowTag": "robot -d Results/TagReports/PurchaseFlow -i PurchaseFlow  -v browser:firefox  Suites",
+
+    "test-chrome-AllSuites": "robot -d Results/AllSuites  Suites",
+    "test-firefox-AllSuites": "robot -d Results/AllSuites  -v browser:firefox  Suites"
+  },
+  "author": "RichardRG",
+  "license": "ISC"
+}
