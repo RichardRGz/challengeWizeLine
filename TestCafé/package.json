@@ -1,0 +1,41 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "All of the scripts required by the challenge but in the TestCafé environment.",
+  "main": "index.js",
+  "scripts": {
+    "test-chrome-validLogin": "testcafe chrome ./POM/Tests/aValidLogin.test.js",
+    "test-chrome-invalidLogin": "testcafe chrome ./POM/Tests/bInvalidLogin.test.js",
+    "test-chrome-logOutHome": "testcafe chrome ./POM/Tests/cLogoutHome.test.js",
+    "test-chrome-SortProducts": "testcafe chrome ./POM/Tests/dSortProducts.test.js",
+    "test-chrome-MutipleItems": "testcafe chrome ./POM/Tests/eAddMultipleItems.test.js",
+    "test-chrome-SpecificItem": "testcafe chrome ./POM/Tests/fAddSpecificProduct.test.js",
+    "test-chrome-PurchaseFlow": "testcafe chrome ./POM/Tests/gPurchaseFlow.test.js",
+
+    "test-firefox-validLogin": "testcafe firefox ./POM/Tests/aValidLogin.test.js",
+    "test-firefox-invalidLogin": "testcafe firefox ./POM/Tests/bInvalidLogin.test.js",
+    "test-firefox-logOutHome": "testcafe firefox ./POM/Tests/cLogoutHome.test.js",
+    "test-firefox-SortProducts": "testcafe firefox ./POM/Tests/dSortProducts.test.js",
+    "test-firefox-MutipleItems": "testcafe firefox ./POM/Tests/eAddMultipleItems.test.js",
+    "test-firefox-SpecificItem": "testcafe firefox ./POM/Tests/fAddSpecificProduct.test.js",
+    "test-firefox-PurchaseFlow": "testcafe firefox ./POM/Tests/gPurchaseFlow.test.js",
+
+    "test-chrome-loginTag": "testcafe chrome ./POM/Tests/ --test-meta type=LoginRelated",
+    "test-chrome-productRelatedTag": "testcafe chrome ./POM/Tests/ --test-meta type=ProductsRelated",
+    "test-chrome-purchaseFlowTag": "testcafe chrome ./POM/Tests/ --test-meta type=PurchaseFlow",
+
+    "test-firefox-loginTag": "testcafe firefox ./POM/Tests/ --test-meta type=LoginRelated",
+    "test-firefox-productRelatedTag": "testcafe firefox ./POM/Tests/ --test-meta type=ProductsRelated",
+    "test-firefox-purchaseFlowTag": "testcafe firefox ./POM/Tests/ --test-meta type=PurchaseFlow",
+
+    "test-chrome-allSuites": "testcafe chrome ./POM/Tests/",
+    "test-firefox-allSuites": "testcafe firefox ./POM/Tests/"
+
+  },
+  "author": "RichardRG",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "testcafe": "^1.16.1"
+  }
+}

@@ -1,10 +1,10 @@
 *** Settings ***
 Library  SeleniumLibrary
-Resource  ./Variables.robot
+Resource  ../../Variables.robot
 
 *** Keywords ***
 Open LoginPage
-    Open Browser    ${LoginPage}  ${Browser}
+    Open Browser    ${LOGIN_PAGE}  ${BROWSER}
     Maximize Browser Window
     Title Should Be  Swag Labs
     Set selenium timeout    10

@@ -1,0 +1,27 @@
+** Settings ***
+Library  SeleniumLibrary
+
+*** Variables ***
+# SITE DATA
+${LOGIN_PAGE}  https://www.saucedemo.com/
+${BROWSER}    Chrome
+${PAGE_TITLE}  Swag Labs
+
+# LOGIN DATA
+${VALID_USERNAME}    standard_user
+${VALID_PASSWORD}    secret_sauce
+${LOCKED_USERNAME}   locked_out_user
+${INVALID_USERNAME}  invalid_username
+${INVALID_PASSWORD}  invalid_password
+${EMPTY} 
+
+#PRODUCT DATA
+${BACKPACK}  Sauce Labs Backpack
+${JACKET}    Sauce Labs Fleece Jacket
+${TSHIRT}    Test.allTheThings() T-Shirt (Red)
+${ONESIE}    Sauce Labs Onesie
+
+# BILLING DATA
+${FIRST_NAME}  userFirstName
+${LAST_NAME}   userLastName
+${POSTAL_CODE}   12345-1234
